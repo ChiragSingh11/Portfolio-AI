@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="nav-toggle" class="nav-toggle">☰</button>
+        <!-- Theme Toggle Button in Navbar -->
+        <button id="toggle-theme" class="theme-toggle">Dark Mode</button>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="header">
+        <div class="photo">
+            <img src="Pursuing-a-PhD-for-Working-Professionals.jpg" alt="Your Photo">
+        </div>
+        <div class="intro">
+            <h1>Your Name</h1>
+            <p>Web Developer | Designer | Programmer</p>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-card" data-aos="fade-up">
+                <h3>HTML & CSS</h3>
+                <div class="progress-bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill-card" data-aos="fade-up">
+                <h3>JavaScript</h3>
+                <div class="progress-bar"><span style="width: 85%"></span></div>
+            </div>
+            <div class="skill-card" data-aos="fade-up">
+                <h3>React</h3>
+                <div class="progress-bar"><span style="width: 80%"></span></div>
+            </div>
+            <div class="skill-card" data-aos="fade-up">
+                <h3>Node.js</h3>
+                <div class="progress-bar"><span style="width: 75%"></span></div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section with Filter -->
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="filter-buttons">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="app">Mobile Apps</button>
+    </div>
+    <div class="project-cards">
+        <div class="card" data-category="web" data-aos="fade-up">
+            <h3>Project 1</h3>
+            <img src="HiRes-17.jpg" alt="Project 1">
+            <p>Web Development Project</p>
+        </div>
+        <div class="card" data-category="app" data-aos="fade-up">
+            <h3>Project 2</h3>
+            <img src="HiRes-17.jpg" alt="Project 2">
+            <p>Mobile App Project</p>
+        </div>
+        <div class="card" data-category="web" data-aos="fade-up">
+            <h3>Project 3</h3>
+            <img src="HiRes-17.jpg" alt="Project 3">
+            <p>Another Web Development Project</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Social Media Links -->
+    <footer>
+        <h2>Connect with Me</h2>
+        <div class="social-links">
+            <a href="https://github.com/your-username" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/your-username" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
